@@ -58,3 +58,5 @@ END;
 #范围 
 #2019-01-01 至 2021-12-31
 
+#source 
+#http://tech.akom.net/archives/36-Creating-A-Basic-Date-Dimension-Table-in-MySQL.html
