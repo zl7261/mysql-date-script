@@ -50,3 +50,11 @@ BEGIN
         SET v_full_date = DATE_ADD(v_full_date, INTERVAL 1 DAY);
     END WHILE;
 END;
+
+#使用:
+ call datedimbuild('2019-01-01','2022-01-01'); 
+ select ** from datedim limit 10;
+ 
+#范围 
+#2019-01-01 至 2021-12-31
+
