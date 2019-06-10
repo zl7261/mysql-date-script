@@ -13,7 +13,6 @@ CREATE TABLE IF NOT EXISTS datedim  (
 ) ENGINE=InnoDB AUTO_INCREMENT=1000;
 
 
-delimiter //
 
 DROP PROCEDURE IF EXISTS datedimbuild;
 CREATE PROCEDURE datedimbuild (p_start_date DATE, p_end_date DATE)
@@ -51,12 +50,12 @@ BEGIN
     END WHILE;
 END;
 
-#使用:
+#use:
  call datedimbuild('2019-01-01','2022-01-01'); 
  select ** from datedim limit 10;
  
-#范围 
+#range 
 #2019-01-01 至 2021-12-31
 
-#source 
+#@see
 #http://tech.akom.net/archives/36-Creating-A-Basic-Date-Dimension-Table-in-MySQL.html
